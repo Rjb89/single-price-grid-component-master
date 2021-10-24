@@ -110,8 +110,10 @@ opacity: 60%;
 }
 @media(max-width:768px)
 {
+
 .grid_container{
 width: 90%;
+height: 80%;
 display: flex;
 flex-direction: column;
 }
