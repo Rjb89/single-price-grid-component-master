@@ -1,0 +1,125 @@
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+font-family: 'Karla', sans-serif;
+font-size: 16px;
+}
+body{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--Light-Gray);
+}
+
+.grid_container{
+width: 60%;
+display: grid;
+grid-template-columns: repeat(2 ,1fr);
+grid-template-rows: repeat(2,min-content);
+}
+.card{
+padding: 2rem;
+}
+.card_1{
+grid-column: 1/3;
+background-color: #fff;
+border-radius: 5px 5px 0 0;
+
+}
+.main_header{
+color: var(--Cyan);
+margin-bottom: 2rem;
+}
+.card_1_detail{
+    color: var(--Bright-Yellow);
+    margin-bottom: 1rem;
+}
+.main_paragraph{
+color: var(--Grayish-Blue);
+line-height: 1.4;
+font-weight: 400;
+font-size: 1.2rem;
+letter-spacing: .2px;
+line-height: 2;
+}
+.card_2{
+background-color: var(--Cyan);
+border-radius: 0 0 0 5px ;
+}
+.card_2_detail{
+color: rgb(255, 255, 255);
+margin-bottom: 1rem;
+font-weight: 700;
+}
+.card_2_paragraph_1{
+color: white;
+font-size: 2em;
+font-weight: 700;
+margin-bottom: 1rem;
+}
+span{
+font-size: .6em;
+opacity: 50%;
+font-weight: 400;
+}
+.card_2_paragraph_2{
+color: white;
+opacity: 70%;
+font-size: 1.2em;
+margin-bottom: 2rem;
+}
+.btn{
+background-color: var(--Bright-Yellow);
+font-family: 'Karla', sans-serif;
+text-align: center;
+padding: 1rem;
+border-radius: 5px;
+width: 100%;
+margin: 0 auto;
+border: none;
+color: white;
+font-size: 1.2em;
+font-weight: 700;
+}
+.card_3{
+background-color: var(--Cyan);
+opacity: 70%;
+border-radius: 0 0 5px 0;
+
+}
+.card_3_detail{
+color: white;
+margin-bottom: 2rem;
+line-height: 1.2;
+font-weight: 700;
+}
+.card_3_paragraph{
+color: white;
+line-height: 1.4;
+opacity: 60%;
+}
+@media(max-width:768px)
+{
+.grid_container{
+width: 90%;
+display: flex;
+flex-direction: column;
+}
+.main_header{
+font-size: 1.6em;
+letter-spacing: -1.2px;
+}
+.card_1_detail{
+font-size: 1.1em;
+}
+}
